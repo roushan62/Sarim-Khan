@@ -37,7 +37,7 @@ function ClientWalls() {
                 {group.clients.map((c) => (
                   <li
                     key={c}
-                    className="group grid h-[72px] place-items-center bg-surface px-3 py-3 text-center transition-all duration-300 hover:bg-sand hover:shadow-card"
+                    className="group grid h-[88px] place-items-center bg-surface px-4 py-3 text-center transition-all duration-300 hover:z-10 hover:bg-sand hover:shadow-lift"
                   >
                     <ClientLogoCell name={c} />
                   </li>
@@ -88,7 +88,7 @@ function Growth() {
         <Reveal className="text-center">
           <p className="eyebrow justify-center before:hidden after:hidden">Growth & Scale</p>
           <h2 className="h-display mx-auto mt-4 max-w-2xl text-3xl md:text-[38px]">
-            A delivery organization compounding at scale
+            The delivery organization Sarim leads — compounding at scale
           </h2>
           <span className="gold-rule mx-auto" />
         </Reveal>
