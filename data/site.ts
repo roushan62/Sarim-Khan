@@ -1,9 +1,6 @@
 /**
- * Global site constants.
- *
- * TODO(EMAIL): replace CONTACT.email with Sarim Khan's direct email before launch.
- * TODO(PHONE): replace CONTACT.phone with Sarim Khan's direct phone before launch.
- * The current values are FocusOn Interiors' publicly listed business contacts.
+ * Global site constants and configuration for Sarim Khan's professional portfolio.
+ * Configured for static export and GitHub Pages deployment without backend dependencies.
  */
 export const SITE = {
   name: "Sarim Khan",
@@ -11,19 +8,15 @@ export const SITE = {
   company: "FocusOn Interior Decorators Pvt. Ltd.",
   companyShort: "FocusOn Interiors",
   tagline: "Project Director · Turnkey Interior Fit-Out",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://sarim-khan.vercel.app",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://roushan62.github.io/Sarim-Khan",
   description:
     "Sarim Khan is Project Director at FocusOn Interior Decorators Pvt. Ltd., directing PAN-India turnkey commercial interior fit-out delivery — from BOQ to handover — for corporate, BFSI, healthcare, education and F&B clients.",
 } as const;
 
 export const CONTACT = {
-  // TODO(EMAIL): replace with Sarim's direct email address
   email: "info@focusoninterior.in",
-  emailPlaceholder: true,
-  // TODO(PHONE): replace with Sarim's direct phone number
   phone: "+91 99102 58820",
   phoneHref: "+919910258820",
-  phonePlaceholder: true,
   linkedin: "https://www.linkedin.com/in/sarim-khan-485a90304/",
   linkedinCompany: "https://www.linkedin.com/company/focuson-interiors/",
   whatsapp: "https://wa.me/919910258820",

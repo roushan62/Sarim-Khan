@@ -30,8 +30,7 @@ SEO: per-page metadata, OpenGraph + `opengraph-image`, `sitemap.xml`,
 
 All content lives in typed data files — no JSX edits needed:
 
-- `data/site.ts` — name, contacts (**replace `TODO(EMAIL)` / `TODO(PHONE)`
-  before launch**), nav, stats
+- `data/site.ts` — name, contacts, nav, stats
 - `data/projects.ts` — every engagement (area, value, vertical, narrative, images)
 - `data/clients.ts`, `data/gallery.ts`, `data/media.ts`, `data/expertise.ts`, `data/experience.ts`
 
@@ -41,19 +40,16 @@ Real FocusOn project photos were extracted from the company's public media
 library (`focusoninteriors.com`) via `scripts/fetch_assets.py` usage notes;
 resume PDF is regenerated with `python scripts/make_resume.py`.
 
-## Deploy on Vercel (recommended path — no local dev required)
+## Deploy on GitHub Pages (No Vercel · No Backend Server Required)
 
-1. Push this repository to GitHub (already done — branch `main`).
-2. In Vercel: **Add New → Project → Import** this GitHub repository.
-3. Vercel auto-detects **Next.js** — framework preset, build command
-   `next build`, output `.next` — **no configuration needed** (zero-config).
-4. (Optional) Configure domains + set environment variable
-   `NEXT_PUBLIC_SITE_URL=https://<your-domain>` so canonical URLs and the
-   sitemap point to the production domain. Defaults to
-   `https://sarim-khan.vercel.app` when unset.
-5. Deploy. Every push to `main` triggers an automatic production deployment.
+This project is configured as a 100% static frontend portfolio using Next.js Static Export (`output: "export"`).
 
-No secrets are required for the site itself.
+1. Push this repository to GitHub.
+2. In your GitHub repository: go to **Settings → Pages** and set **Source** to **GitHub Actions** (or deploy the `/out` directory).
+3. In GitHub Actions or Pages settings, select standard Next.js Static Export deployment, or run `npm run build` locally/in CI which generates all static HTML/CSS/JS files directly into the `/out` folder.
+4. (Optional) Configure custom domain or set environment variable `NEXT_PUBLIC_SITE_URL` if needed. Defaults to `https://roushan62.github.io/Sarim-Khan` when unset.
+
+No server, API backend, or Vercel account is required. Everything runs statically from GitHub.
 
 ## Scripts (for contributors running locally)
 
