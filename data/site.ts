@@ -26,6 +26,8 @@ export const CONTACT = {
   phonePlaceholder: true,
   linkedin: "https://www.linkedin.com/in/sarim-khan-485a90304/",
   linkedinCompany: "https://www.linkedin.com/company/focuson-interiors/",
+  whatsapp: "https://wa.me/919910258820",
+  instagram: "https://www.instagram.com/focuson_interiors/",
   location: "Delhi-NCR, India",
 } as const;
 

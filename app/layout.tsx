@@ -4,6 +4,7 @@ import "./globals.css";
 import { SITE, CONTACT } from "@/data/site";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import FloatingContact from "@/components/FloatingContact";
 
 /**
  * Fraunces (display serif) + Inter (body grotesk) — Google Fonts typefaces,
@@ -128,6 +129,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <FloatingContact />
       </body>
     </html>
   );
