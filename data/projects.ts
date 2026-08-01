@@ -385,6 +385,27 @@ export const PROJECTS: Project[] = [
     images: pool.corporate("Pixtory").slice(1),
   },
   {
+    slug: "ericsson-ahmedabad",
+    client: "Ericsson India",
+    location: "Ahmedabad, Gujarat",
+    areaSqft: 25000,
+    valueCr: 3.5,
+    vertical: "Corporate & IT",
+    scope: ["25,000 sq. ft.", "IT & Telecom Campus", "Design & Build"],
+    status: "Completed",
+    summary:
+      "Ericsson India's Ahmedabad office campus — 25,000 sq. ft. of IT and telecom workplace delivered by FocusOn Interiors.",
+    narrative: [
+      "Ericsson India's Ahmedabad campus represents a marquee IT-sector delivery: 25,000 sq. ft. of workplace, collaboration zones and tech-support operations spaces for one of the world's leading telecom equipment companies.",
+      "The engagement spanned the full fit-out scope — open workplaces, executive cabins, meeting suites, a branded reception, and tech-ops floor with raised-access flooring and integrated services — all executed to Ericsson's global workplace standards.",
+      "Under Sarim's direction, the project was delivered through a structured programme of design coordination with Ericsson's facilities team, phased MEP installation, quality inspections at each milestone, and a snag-free handover.",
+    ],
+    images: [
+      { src: "/images/projects/ericsson-ahmedabad/collage.webp", alt: "Ericsson India, Ahmedabad — corporate campus delivered by FocusOn Interiors", caption: "Ericsson campus, Ahmedabad — delivered by FocusOn Interiors" },
+    ],
+    realPhotos: true,
+  },
+  {
     slug: "luminous-haridwar",
     client: "Luminous Power Technologies",
     location: "Haridwar, Uttarakhand",

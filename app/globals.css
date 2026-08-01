@@ -134,3 +134,47 @@
     scrollbar-width: none;
   }
 }
+
+/* ── Logo Marquee Scroll ──────────────────────────────────── */
+
+@keyframes logo-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.logo-scroll-track {
+  animation: logo-scroll 40s linear infinite;
+  width: max-content;
+}
+
+.logo-scroll-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-scroll-track {
+    animation: none;
+    flex-wrap: wrap;
+  }
+}
+
+/* ── Social Icon Hover Effects ─────────────────────────────── */
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+
+.social-icon-pulse::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.social-icon-pulse:hover::before {
+  animation: pulse-ring 1.2s ease-out infinite;
+}

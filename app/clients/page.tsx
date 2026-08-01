@@ -6,6 +6,7 @@ import GrowthChart from "@/components/GrowthChart";
 import CtaBand from "@/components/CtaBand";
 import { CLIENT_GROUPS } from "@/data/clients";
 import { COMPANY_SNAPSHOT } from "@/data/experience";
+import ClientLogoCell from "@/components/ClientLogoCell";
 
 export const metadata: Metadata = {
   title: "Clients & Recognition",
@@ -36,11 +37,9 @@ function ClientWalls() {
                 {group.clients.map((c) => (
                   <li
                     key={c}
-                    className="group grid h-full min-h-[64px] place-items-center bg-surface px-3 py-4 text-center transition-colors duration-300 hover:bg-sand"
+                    className="group grid h-[72px] place-items-center bg-surface px-3 py-3 text-center transition-all duration-300 hover:bg-sand hover:shadow-card"
                   >
-                    <span className="font-display text-[14.5px] font-medium text-navy/40 transition-colors duration-300 group-hover:text-navy">
-                      {c}
-                    </span>
+                    <ClientLogoCell name={c} />
                   </li>
                 ))}
               </ul>
