@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * Renders a brand-aware logo in the clients grid.
  * Grayscale by default, colored on hover (via parent .group-hover).

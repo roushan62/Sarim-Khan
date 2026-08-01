@@ -5,12 +5,11 @@ import { SITE, CONTACT } from "@/data/site";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
-import { Analytics } from "@vercel/analytics/next";
 
 /**
  * Fraunces (display serif) + Inter (body grotesk) — Google Fonts typefaces,
  * self-hosted via @fontsource-variable so builds never depend on external
- * font CDN availability (works identically on Vercel, zero config).
+ * font CDN availability (works identically on GitHub Pages or any static host, zero config).
  */
 const display = localFont({
   variable: "--font-display",
@@ -131,7 +130,6 @@ export default function RootLayout({
         </main>
         <Footer />
         <FloatingContact />
-        <Analytics />
       </body>
     </html>
   );
