@@ -22,7 +22,7 @@ function Timeline() {
           <Reveal>
             <p className="eyebrow">Career Timeline</p>
             <h2 className="h-display mt-4 text-3xl md:text-[38px]">
-              Eight years, one organization, compounding scale
+              7+ years, one organization, compounding scale
             </h2>
             <span className="gold-rule" />
           </Reveal>

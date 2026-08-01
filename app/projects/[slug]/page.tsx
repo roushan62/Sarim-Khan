@@ -5,6 +5,8 @@ import { ArrowLeft, ArrowRight, BadgeCheck, MapPin } from "lucide-react";
 import Img from "@/components/Img";
 import Reveal from "@/components/Reveal";
 import CtaBand from "@/components/CtaBand";
+import ClientLogo from "@/components/ClientLogo";
+import { logoForClient } from "@/data/clients";
 import { getProject, nextProject, formatCr, formatSqft, PROJECTS } from "@/data/projects";
 
 interface Params {
@@ -47,6 +49,7 @@ export default function ProjectDetailPage({ params }: Params) {
   const project = getProject(params.slug);
   if (!project) notFound();
   const next = nextProject(project.slug);
+  const clientLogo = logoForClient(project.client);
 
   const [hero, ...rest] = project.images;
   const narrative =
@@ -75,6 +78,11 @@ export default function ProjectDetailPage({ params }: Params) {
               <ArrowLeft size={14} /> All Projects
             </Link>
             <div className="mt-5 max-w-3xl">
+              {clientLogo && (
+                <span className="mb-5 flex h-14 w-fit max-w-[170px] items-center border border-line/60 bg-surface px-4 py-2.5 shadow-lift">
+                  <ClientLogo name={project.client} className="max-h-9" />
+                </span>
+              )}
               <span className="bg-gold px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-white">
                 {project.vertical}
               </span>

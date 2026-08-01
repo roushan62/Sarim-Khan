@@ -4,6 +4,8 @@ import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, MapPin } from "lucide-react";
 import Img from "./Img";
+import ClientLogo from "./ClientLogo";
+import { logoForClient } from "@/data/clients";
 import { formatCr, formatSqft, type Project } from "@/data/projects";
 
 /**
@@ -12,6 +14,7 @@ import { formatCr, formatSqft, type Project } from "@/data/projects";
  */
 export default function ProjectCard({ project }: { project: Project }) {
   const reduce = useReducedMotion();
+  const clientLogo = logoForClient(project.client);
   return (
     <motion.article
       whileHover={reduce ? {} : { scale: 1.02, y: -4 }}
@@ -34,6 +37,11 @@ export default function ProjectCard({ project }: { project: Project }) {
           {project.realPhotos && (
             <span className="absolute right-3 top-3 bg-gold px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-white">
               On-Site Photos
+            </span>
+          )}
+          {clientLogo && (
+            <span className="absolute bottom-3 left-3 flex h-9 max-w-[118px] items-center border border-line/70 bg-surface/95 px-2.5 py-1.5 shadow-card backdrop-blur-sm">
+              <ClientLogo name={project.client} className="max-h-6" />
             </span>
           )}
         </div>

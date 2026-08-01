@@ -92,7 +92,7 @@ export default function Footer() {
       color: "hover:bg-[#34A853] hover:border-[#34A853]",
     },
     {
-      label: "Instagram",
+      label: "Instagram — FocusOn Interiors",
       href: "https://www.instagram.com/focuson_interiors/",
       icon: <InstagramIcon />,
       color: "hover:bg-[#E4405F] hover:border-[#E4405F]",
@@ -127,7 +127,7 @@ export default function Footer() {
           {/* ── Social Icons ─────────────────────────── */}
           <div className="mt-7">
             <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.22em] text-goldLight">
-              Connect With Us
+              Connect With Sarim
             </p>
             <div className="flex flex-wrap gap-3">
               {socialLinks.map((s) => (
@@ -270,7 +270,7 @@ export default function Footer() {
           <p>
             © {year} {SITE.name}. Project Director, {SITE.company}.
           </p>
-          <p>Site built for professional portfolio purposes.</p>
+          <p>Personal branding portfolio — projects & clients Sarim has directed.</p>
         </div>
       </div>
     </footer>
