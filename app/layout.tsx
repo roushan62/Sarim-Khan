@@ -5,6 +5,7 @@ import { SITE, CONTACT } from "@/data/site";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
+import { Analytics } from "@vercel/analytics/next";
 
 /**
  * Fraunces (display serif) + Inter (body grotesk) — Google Fonts typefaces,
@@ -130,6 +131,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <FloatingContact />
+        <Analytics />
       </body>
     </html>
   );
