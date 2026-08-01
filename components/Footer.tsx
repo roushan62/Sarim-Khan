@@ -92,8 +92,8 @@ export default function Footer() {
       color: "hover:bg-[#34A853] hover:border-[#34A853]",
     },
     {
-      label: "Instagram — FocusOn Interiors",
-      href: "https://www.instagram.com/focuson_interiors/",
+      label: "Instagram — Sarim Khan",
+      href: CONTACT.instagram,
       icon: <InstagramIcon />,
       color: "hover:bg-[#E4405F] hover:border-[#E4405F]",
     },

@@ -14,13 +14,13 @@ export const SITE = {
 } as const;
 
 export const CONTACT = {
-  email: "info@focusoninterior.in",
-  phone: "+91 99102 58820",
-  phoneHref: "+919910258820",
+  email: "sarim.sam786@gmail.com",
+  phone: "+91 90055 54240",
+  phoneHref: "+919005554240",
   linkedin: "https://www.linkedin.com/in/sarim-khan-485a90304/",
   linkedinCompany: "https://www.linkedin.com/company/focuson-interiors/",
-  whatsapp: "https://wa.me/919910258820",
-  instagram: "https://www.instagram.com/focuson_interiors/",
+  whatsapp: "https://wa.me/919005554240",
+  instagram: "https://www.instagram.com/sarimkhan10?utm_source=qr",
   location: "Delhi-NCR, India",
 } as const;
 

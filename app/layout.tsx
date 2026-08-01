@@ -99,7 +99,7 @@ const personJsonLd = {
   },
   url: SITE.url,
   image: `${SITE.url}/images/sarim/portrait-navy-suit.webp`,
-  sameAs: [CONTACT.linkedin],
+  sameAs: [CONTACT.linkedin, CONTACT.instagram],
   address: {
     "@type": "PostalAddress",
     addressLocality: "Delhi-NCR",
